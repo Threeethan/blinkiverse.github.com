@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> Blinkiverse .. Getting Started with BlinkyTape </title>
+   <meta name="author" content="Blinkiverse" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body id = "clouds"> 
+	
+<!-- <canvas id="canvasbg"></canvas>   -->
+
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkiverse-logo.png" alt="Blinkiverse Logo" title="Blinkiverse | Open Source Electronic Things" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkiverse-logo.png" alt="Blinkiverse Logo" title="Blinkiverse | Open Source Electronic Things" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+
+					<a href="/" class=""> Home </a> 
+					<a href="/bio" class=""> About </a>
+
+			  </div>	
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones">
+
+			<a href="/" class=""> Home </a> 
+  			<a href="/bio" class=""> About </a> 
+
+  		</div> 
+	</div>
+
+  
+  <div class="row">	
+<div class="twelve columns"> 
+</div> 
+</div>
+
+<div class="row">	
+  <div class="twelve columns"> 
+    
+    <div class="project_full docs"> 
+      
+      <div class = "qq5">
+      <h1>
+      Getting Started with BlinkyTape 
+      </h1> 
+    
+      </div> 
+      <p>Woop woop!</p>
+
+<h2>Install Arduino</h2>
+
+<p>The Arduino development environment runs in Windows, Mac OS X, and Linux.</p>
+
+<p>BlinkyTape is known to work with Arduino version 1.0.5.</p>
+
+<p>You can find downloads and detailed install instructions for your platform on
+the <a href="http://arduino.cc/en/Guide/HomePage">Arduino Getting Started page</a>.</p>
+
+<h2>Install the BlinkyTape Arduino Libraries</h2>
+
+<p>Install <a href="https://github.com/BlinkyTape/FastSPI_LED2">this</a>
+and then <a href="https://github.com/BlinkyTape/BlinkyTape_Arduino">this</a>!</p>
+
+<ol>
+<li>Get 'em.</li>
+<li>Put 'em in your <code>libraries</code> folder.</li>
+<li>Restart Arduino, if it is running.</li>
+</ol>
+
+
+<h2>Connect your BlinkyTape to your computer</h2>
+
+<p>Using a micro-USB cable, connect your BlinkyTape to a USB port on your computer.</p>
+
+<h2>Load the "Hello World" Program in Arduino</h2>
+
+<ul>
+<li>Open Arduino</li>
+<li>In the menus, choose <strong>Examples | BlinkyTape | HelloWorld</strong>
+
+<ul>
+<li>Picture go here.</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Prepare Arduino to Program Your BlinkyTape</h2>
+
+<ol>
+<li>Choose <strong>Tools | Board | Arduino Leonardo</strong></li>
+<li>Select your BlinkyBoard's serial port in the <strong>Tools | Serial Port </strong> menu.</li>
+</ol>
+
+
+<h2>Program the BlinkyTape</h2>
+
+<p>Press the Upload Button (upload btn picture) to program your BlinkyTape.</p>
+
+<p>The BlinkyTape should pause for a few seconds as the program is uploaded.</p>
+
+<h2>Make Your Changes!</h2>
+
+<p>Look for these lines:</p>
+
+<pre><code>Some code = Goes.here("later");
+</code></pre>
+
+<p>Change the value of <code>"later"</code> to <code>"blerp"</code> so that your code looks like this:</p>
+
+<pre><code>Some code = Goes.here("blerp");
+</code></pre>
+
+<p>Press the Upload (icon) button again to send your new version of the program
+to the BlinkyTape. When the upload is complete, the BlinkyTape should be
+displaying your color of choice!</p>
+
+<h2>Next Steps</h2>
+
+<ul>
+<li>Learn more about the BlinkyTape Arduino API.</li>
+<li>Want to dig deeper? Check out the BlinkyTape Hardware Schematics.</li>
+<li>Share the something something something.</li>
+</ul>
+
+
+<h2>Troubleshooting</h2>
+
+<p>If the program fails to compile or upload, or the BlinkyTape is not doing what
+you expected, there could be a number of things to check.</p>
+
+<h3>Compile Errors</h3>
+
+<p>(image of arduino status bar on failed compile)</p>
+
+<p>See if you can fix the compile errors. Check the
+<a href="http://arduino.cc/en/Reference/HomePage">Arduino programming reference</a>
+if you get stuck.</p>
+
+<h3>Upload Errors</h3>
+
+<ul>
+<li>Check to make sure that your BlinkyTape is connected to your computer via a
+micro-USB cable.</li>
+<li>Check to make sure that your <strong>Tools | Board</strong> setting is set to
+<strong>Arduino Leonardo</strong>.</li>
+<li>Check to make sure that your <strong>Tools | Serial Port</strong> setting is set to the
+right thing.</li>
+</ul>
+
+
+<h3>BlinkyTape Not Acting Right</h3>
+
+<p>¯\(°_o)/¯</p>
+ 
+    </div> 
+    
+  </div>
+</div> 
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">
+	      <h6><strong><a href="/contact">Contact Us</a></strong></h6>
+
+
+	    </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <h6><strong>About this website</strong></h6>
+	      <p>Last update 2013-09-03 09:15:04 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>
